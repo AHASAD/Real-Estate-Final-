@@ -127,6 +127,13 @@
             background: transparent;
             transition: background-color 0.2s;
         }
+        .icon-btn a .fa-user {
+            color: var(--white);
+
+        }
+        .icon-btn a .fa-user:hover{
+            color: var(--primary);
+        }
 
         .icon-btn:hover {
             /* background-color: var(--primary); */
@@ -793,6 +800,7 @@
             line-height: 1.5;
         }
 
+
         /* Why choose us end */
 
 
@@ -1176,6 +1184,9 @@
             align-items: center;
             gap: 10px;
             /* margin-bottom: 20px; */
+        }
+        #flogo {
+            padding-bottom: 23px;
         }
 
         .logo i {

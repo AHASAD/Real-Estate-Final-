@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffefd5;
+    padding: 2rem;
+    border-radius: 12px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background: white;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+.error {
+    color: red;
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.terms {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.create-account {
+    width: 100%;
+    padding: 0.75rem;
+    /* background: #000; */
+    /* border: 2px solid black; */
+    /* color: white; */
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+#caccount {
+    /* border: 2px solid black; */
+    border: 2px solid #FF9F45;
+}
+
+.create-account:hover {
+    /* background: #333; */
+    background: #FF9F45;
+            color: white;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media (max-width: 326px) {
+    .modal-content {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 0.875rem;
+    }
+
+    input {
+        padding: 0.5rem;
+    }
+
+    .create-account {
+        padding: 0.5rem;
+    }
+}

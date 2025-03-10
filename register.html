@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Register</h1>
+            <h2>Your Account</h2>
+            
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="mobile" placeholder="Mobile No" required>
+                    <span class="error" id="mobileError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Id" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+
+                <div class="terms">
+                    <p>By clicking "create account", you agree to our T&C and Privacy Policy.</p>
+                </div>
+
+                <button type="submit" class="create-account" id="caccount">Create Account</button>
+            </form>
+
+            <p class="login-link">
+                Old User? <a href="./login.html">Login To Your Account</a>
+            </p>
+        </div>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>
