@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+     <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Nav Start -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <span>HappyHome</span>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./aboutUs.html">About</a></li>
+                <li><a href="./agents.html">Agents</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="./contactUs.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="sell-btn">Sell Property</button>
+                <button class="icon-btn"><i class="fas fa-search"></i></button>
+                <button class="icon-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nav End -->
+
+    <!-- Banner start -->
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Our Website!</h2>
+                <h1>Get Your <span>Dream</span> Home Easily</h1>
+
+                <div class="property-type-btns">
+                    <button class="active"><a href="./propertyBuying.html" target="_blank">Buy</a></button>
+                    <button><a href="./propertyRenting.html">Rent</a></button>
+                </div>
+
+                <div class="search_main">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label>City</label>
+                            <select>
+                                <option selected>Kolkata</option>
+                                <option>Mumbai</option>
+                                <option>Delhi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Property Type</label>
+                            <select>
+                                <option selected>Select</option>
+                                <option>Apartment</option>
+                                <option>House</option>
+                                <option>Villa</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>BHK</label>
+                            <select>
+                                <option selected>Select</option>
+                                <option>1 BHK</option>
+                                <option>2 BHK</option>
+                                <option>3 BHK</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Budget</label>
+                            <select>
+                                <option selected>Select</option>
+                                <option>Under 50L</option>
+                                <option>50L - 1Cr</option>
+                                <option>Above 1Cr</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="search-btn">
+                            Find Now <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Banner End -->
+
+    <!-- Buy Your Property start  -->
+    <div class="container">
+        <section class="property-section">
+            <div class="content-left">
+                <h1 class="Buy_your_Button">Buy Your Property</h1>
+                <p class="byPsubtitle">Find from houses, flats, villas, townhouses <br> and more</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur. Amet porta <br> volutpat id volutpat.
+                    Ultrices
+                    enim nec dictum vitae <br> sit malesuada sit tristique. Ut neque at amet sit. <br> Proin nibh
+                    praesent cras
+                    risus in massa amet.</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+            </div>
+            <div class="images-right">
+                <div class="image-container image-top">
+                    <img src="./images/Buy Your Property_(1).png" alt="Modern house with dormer windows">
+                </div>
+                <div class="image-container image-bottom">
+                    <img src="./images/Buy Your Property_(2).png" alt="Luxury home with pool">
+                </div>
+                <div class="image-container image-right">
+                    <img src="./images/Buy Your Property_(3).png" alt="Apartment building">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Buy Your Property End -->
+
+    <!-- Top Properties Start -->
+
+    <div class="top_pro_container">
+        <h2>Top Properties</h2>
+        <div class="carousel">
+            <button class="nav-button prev">&#8249;</button>
+            <button class="nav-button next">&#8250;</button>
+            <div class="carousel-inner">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="./images/Top Properties (1).png" alt="Decent House">
+                        <span class="tag">For Sale</span>
+                    </div>
+                    <div class="property-info">
+                        <h3 class="property-name">Decent House</h3>
+                        <p class="property-details">3 BHK | 750 sq ft | Bangalore</p>
+                        <p class="property-price">₹ 69 - 74 Lacs</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="./images/Top Properties(2).png" alt="Modern Appartment">
+                        <span class="tag">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <h3 class="property-name">Modern Appartment</h3>
+                        <p class="property-details">4 BHK | 900 sq ft | Mumbai</p>
+                        <p class="property-price">₹ 42k/Month</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="./images/Top Properties(3).png" alt="Cozy Townhouse">
+                        <span class="tag">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <h3 class="property-name">Cozy Townhouse</h3>
+                        <p class="property-details">2 BHK | 450 sq ft | Hyderabad</p>
+                        <p class="property-price">₹ 30k/Month</p>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="./images/Top Properties(3).png" alt="Cozy Townhouse">
+                        <span class="tag">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <h3 class="property-name">Cozy Townhouse</h3>
+                        <p class="property-details">2 BHK | 450 sq ft | Hyderabad</p>
+                        <p class="property-price">₹ 30k/Month</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="./images/Top Properties(3).png" alt="Cozy Townhouse">
+                        <span class="tag">For Rent</span>
+                    </div>
+                    <div class="property-info">
+                        <h3 class="property-name">Cozy Townhouse</h3>
+                        <p class="property-details">2 BHK | 450 sq ft | Hyderabad</p>
+                        <p class="property-price">₹ 30k/Month</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Top Properties End -->
+
+    <!-- Sell Your Property start -->
+    <section class="sell_your_property">
+        <div class="sell_your_property_container">
+            <div class="image-wrapper">
+                <div class="border-decoration top-right"></div>
+                <div class="border-decoration bottom-left"></div>
+                <img src="./images/Sell Your Property_img.png" alt="Family holding sold sign with moving boxes">
+            </div>
+            <div class="content">
+                <h1>Sell Your Property</h1>
+                <p class="sYpsubtitle">Sell from houses, flats, villas, townhouses and more</p>
+                <p class="sYpdescription ">Lorem ipsum dolor sit amet consectetur. Nisl fusce morbi potenti eleifend
+                    ornare.
+                    Tincidunt amet aliquet quis orci fringilla erat. Condimentum fermentum elit sodales dolor lacus
+                    ornare urna ridiculus.</p>
+                <a href="#" class="cta-button">Sell Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Property End -->
+
+
+    <!-- Exp City Start -->
+    <div class="container">
+        <h1 class="exp_hed1">Explore Famous Cities</h1>
+        <div class="cities-grid">
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_kolkata.png" alt="Kolkata cityscape">
+                    <div class="city-name">Kolkata</div>
+                </div>
+                <div class="properties">50,000+ Properties</div>
+            </div>
+
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_delhi.png" alt="Delhi India Gate">
+                    <div class="city-name">Delhi</div>
+                </div>
+                <div class="properties">1,20,000+ Properties</div>
+            </div>
+
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_Mumbai.png" alt="Mumbai Marine Drive">
+                    <div class="city-name">Mumbai</div>
+                </div>
+                <div class="properties">68,000+ Properties</div>
+            </div>
+
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_Chennai.png" alt="Chennai Central">
+                    <div class="city-name">Chennai</div>
+                </div>
+                <div class="properties">25,000+ Properties</div>
+            </div>
+
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_Bangalore.png" alt="Bangalore Vidhana Soudha">
+                    <div class="city-name">Bangalore</div>
+                </div>
+                <div class="properties">74,000+ Properties</div>
+            </div>
+
+            <div class="city-card" onmouseover="scaleImage(this)" onmouseout="resetScale(this)">
+                <div class="exp_image-container">
+                    <img src="./images/Explore_Hyderabad.png" alt="Hyderabad Charminar">
+                    <div class="city-name">Hyderabad</div>
+                </div>
+                <div class="properties">46,000+ Properties</div>
+            </div>
+        </div>
+    </div>
+    <!-- Exp City End -->
+
+    <!--  why-choose-us start -->
+    <section class="why-choose-us" id="wCus">
+        <div class="overlay"></div>
+        <div class="whyChoose_container">
+            <h2 class="whyChoosehed2">Why Choose Us</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur. Massa malesuada facilisis ut vestibulum aliquam
+                nunc euismod.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="./images/Why Choose Us(1).png" alt="Search">
+                    </div>
+                    <h3 class="whyChooseHed3">Find Your Future Home</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <img src="./images/Why Choose Us(2).png" alt="Agent">
+                    </div>
+                    <h3 class="whyChooseHed3">Experienced Agents</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <img src="./images/Why Choose Us(3).png" alt="Handshake">
+                    </div>
+                    <h3 class="whyChooseHed3">Deal Closed</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <img src="./images/Why Choose Us(4).png" alt="Verified">
+                    </div>
+                    <h3 class="whyChooseHed3">Verified By Our Team</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  why-choose-us end -->
+
+
+    <!-- our Testimonial start -->
+    <section class="testimonials-section" id="ourT">
+        <div class="testimonials-header">
+            <h2>Our Testimonials</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Eleifend interdum nulla libero dolor duis sapien et.</p>
+        </div>
+
+        <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Lorem ipsum dolor sit amet consectetur. Semper arcu erat cum lorem. Consectetur hendrerit
+                            elementum viverra pulvinar facilisi mi convallis in integer.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="./images/Our Testimonials(1).png"
+                                    alt="Edward Blake">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Edward Blake</div>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Lorem ipsum dolor sit amet consectetur. Orci velit eget rhoncus dui vel nibh congue. Euismod
+                            a morbi sed sed lectus cursus sed adipiscing.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="./images/Our Testimonials (2).png"
+                                    alt="Albert Rhett">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Albert Rhett</div>
+                                <div class="rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Lorem ipsum dolor sit amet consectetur. Purus risus rutrum nulla ullamcorper ullamcorper at
+                            lacus. Molestie aenean elit diam convallis amet. Adipiscing et tincidunt amet at enim.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="./images/Our Testimonials(3).png"
+                                    alt="Henry Gray">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Henry Gray</div>
+                                <div class="rating">★★★★☆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional testimonials for demonstration -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            Lorem ipsum dolor sit amet consectetur. Vitae nunc sed faucibus facilisis. Cras pellentesque
+                            mauris sed lectus. Ut viverra dignissim vivamus convallis.
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="./images/Our Testimonials(1).png"
+                                    alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Johnson</div>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+    <!-- our Testimonial End -->
+
+
+    <!-- Download app start -->
+    <section class="download-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h2 class="downloadHed2">Download Our App</h2>
+                <ul id="download_ulLorem">
+                    <li class="download_Li">Lorem ipsum dolor sit amet consectetur.</li>
+                    <li class="download_Li">Mauris morbi velit facilisis enim sagittis.</li>
+                </ul>
+                <div class="app-buttons">
+                    <a href="#" class="store-button">
+                        <img src="./images/download_playstore.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="#" class="store-button">
+                        <img src="./images/download_applestore.png" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download app end -->
+
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <h2 class="footHead2">HappyHome</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur. Dolor cursus consectetur et arcu quis
+                    netus at. Tellus felis elementum eget turpis amet. Duis eget neque quisque eget ipsum enim.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Lorem ipsum, dolor sit amet, consectetur</p>
+                    <p><i class="fas fa-phone"></i> +91 0011001100</p>
+                    <p><i class="fas fa-envelope"></i> happyhome@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Services</h3>
+                <ul>
+                    <li><a href="#">House for Rent</a></li>
+                    <li><a href="#">House for Sale</a></li>
+                    <li><a href="#">Villas for Rent</a></li>
+                    <li><a href="#">Villas for Sale</a></li>
+                    <li><a href="#">Flats for Rent</a></li>
+                    <li><a href="#">Flats for Sale</a></li>
+                    <li><a href="#">Townhouse for Rent</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter Subscribe</h3>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HappyHome. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+    <!-- ================================================= -->
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js -->
+     <script src="./js/index.js"></script>
+</body>
+</html>

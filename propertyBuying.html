@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property Buying</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="./css/PropertyBuying.css">
+
+     <!--  -->
+     <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header section_padding">
+        <div class="logo">
+            <a href="/">
+                <svg class="home-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
+                </svg>
+                <span>HappyHome</span>
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link active">Home</a></li>
+                <li><a href="./aboutUs.html" class="nav-link">About</a></li>
+                <li><a href="./agents.html" class="nav-link">Agents</a></li>
+                <li><a href="index.html#testimonial" class="nav-link">Testimonial</a></li>
+                <li><a href="./contactUs.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-sell">Sell Property</button>
+            <button class="btn-search" aria-label="Search">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <button class="btn-profile" aria-label="Profile">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor"
+                        d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2a10 10 0 00-10 10h20a10 10 0 00-10-10z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section_padding">
+            <div class="hero-content">
+                <h2>Buy Your Property</h2>
+                <div class="breadcrumb">
+                    <a href="/" class="home-link">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
+                        </svg>
+                        Home 
+                    </a>
+                    <span class="separator">></span>
+                    <span class="current">Buy Property</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--  property Filter start-->
+    <div class="propertyFilter_container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="filters-container">
+                <div class="filters-header">
+                    <h2>Filters</h2>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('city')">
+                        <h3>City</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="city">
+                        <label class="radio-container">
+                            <input type="radio" name="city" checked>
+                            <span class="radio-label">Kolkata</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="city">
+                            <span class="radio-label">Bangalore</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="city">
+                            <span class="radio-label">Chennai</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="city">
+                            <span class="radio-label">Hyderabad</span>
+                        </label>
+                        <button class="more-btn">+6 more</button>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('property-type')">
+                        <h3>Property Type</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="property-type">
+                        <label class="radio-container">
+                            <input type="radio" name="property" checked>
+                            <span class="radio-label">Flat</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="property">
+                            <span class="radio-label">House</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="property">
+                            <span class="radio-label">Villa</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="property">
+                            <span class="radio-label">Townhouse</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="property">
+                            <span class="radio-label">Farmhouse</span>
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('bhk')">
+                        <h3>BHK</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="bhk">
+                        <div class="bhk-chips">
+                            <button class="chip">1 BHK</button>
+                            <button class="chip">2 BHK</button>
+                            <button class="chip">3 BHK</button>
+                            <button class="chip">4 BHK</button>
+                            <button class="chip">5 BHK</button>
+                            <button class="chip">6 BHK</button>
+                        </div>
+                        <button class="more-btn">+2 more</button>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('budget')">
+                        <h3>Budget</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="budget">
+                        <div class="slider-container">
+                            <input type="range" min="0" max="100" value="40" class="slider" id="budgetSlider">
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>4 cr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('area')">
+                        <h3>Area (sq ft)</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="area">
+                        <div class="area-inputs">
+                            <select class="area-select">
+                                <option value="">Min</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                            <span>to</span>
+                            <select class="area-select">
+                                <option value="">Max</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('posted-by')">
+                        <h3>Posted By</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="posted-by">
+                        <label class="radio-container">
+                            <input type="radio" name="posted">
+                            <span class="radio-label">Owner</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="posted">
+                            <span class="radio-label">Agent</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="posted">
+                            <span class="radio-label">Builder</span>
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header" onclick="toggleSection('amenities')">
+                        <h3>Amenities</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="amenities">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkbox-label">Parking</span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkbox-label">Lift</span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkbox-label">Park</span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkbox-label">Swimming Pool</span>
+                        </label>
+                        <button class="more-btn">+4 more</button>
+                    </div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header collapsed" onclick="toggleSection('bathroom')">
+                        <h3>Bathroom</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="bathroom" style="display: none;"></div>
+                </div>
+        
+                <div class="filter-section">
+                    <div class="filter-header collapsed" onclick="toggleSection('furnishing')">
+                        <h3>Furnishing</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="filter-content" id="furnishing" style="display: none;"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="results-header">
+                <h1>3200 Results | Flats for Sale in Kolkata</h1>
+                <div class="sort-dropdown">
+                    <button onclick="toggleSort()" class="sort-button">
+                        Sort By: Default
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="sort-menu" id="sortMenu">
+                        <a href="#">Price - Low to High</a>
+                        <a href="#">Price - High to Low</a>
+                        <a href="#">Newest First</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="./images/propertyBuyingFilter(1).png" alt="Diamond Apartment">
+                </div>
+                <div class="property-details">
+                    <div class="property-info">
+                        <div class="property-actions">
+                            <button class="heart-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="share-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16 6 12 2 8 6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2>Diamond Apartment</h2>
+                        <p class="location">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vivamus turpis nulla, Kolkata
+                        </p>
+                        <div class="specs">
+                            <span>4 BHK</span>
+                            <span>836 sq ft</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                        <p class="description">
+                            Purus adipiscing amet urna platea. Ullamcorper mauris quis pretium in viverra netus nibh.
+                        </p>
+                    </div>
+                    <div class="property-price">
+                        <div class="price">
+                            <h3>₹ 81 Lacs</h3>
+                            <p>₹ 6,124 / sq ft</p>
+                        </div>
+                        <div class="property-buttons">
+                            <button class="view-details"> <a href="./propertyDetails.html" target="_blank">View Details</a></button>
+                            <button class="contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="./images/propertyBuyingFilter(2).png" alt="Diamond Apartment">
+                </div>
+                <div class="property-details">
+                    <div class="property-info">
+                        <div class="property-actions">
+                            <button class="heart-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="share-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16 6 12 2 8 6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2>Diamond Apartment</h2>
+                        <p class="location">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vivamus turpis nulla, Kolkata
+                        </p>
+                        <div class="specs">
+                            <span>4 BHK</span>
+                            <span>836 sq ft</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                        <p class="description">
+                            Purus adipiscing amet urna platea. Ullamcorper mauris quis pretium in viverra netus nibh.
+                        </p>
+                    </div>
+                    <div class="property-price">
+                        <div class="price">
+                            <h3>₹ 81 Lacs</h3>
+                            <p>₹ 6,124 / sq ft</p>
+                        </div>
+                        <div class="property-buttons">
+                            <button class="view-details">View Details</button>
+                            <button class="contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="./images/propertyBuyingFilter(3).png" alt="Diamond Apartment">
+                </div>
+                <div class="property-details">
+                    <div class="property-info">
+                        <div class="property-actions">
+                            <button class="heart-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="share-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16 6 12 2 8 6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2>Diamond Apartment</h2>
+                        <p class="location">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vivamus turpis nulla, Kolkata
+                        </p>
+                        <div class="specs">
+                            <span>4 BHK</span>
+                            <span>836 sq ft</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                        <p class="description">
+                            Purus adipiscing amet urna platea. Ullamcorper mauris quis pretium in viverra netus nibh.
+                        </p>
+                    </div>
+                    <div class="property-price">
+                        <div class="price">
+                            <h3>₹ 81 Lacs</h3>
+                            <p>₹ 6,124 / sq ft</p>
+                        </div>
+                        <div class="property-buttons">
+                            <button class="view-details">View Details</button>
+                            <button class="contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="./images/propertyBuyingFilter(4).png" alt="Diamond Apartment">
+                </div>
+                <div class="property-details">
+                    <div class="property-info">
+                        <div class="property-actions">
+                            <button class="heart-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="share-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16 6 12 2 8 6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2>Diamond Apartment</h2>
+                        <p class="location">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vivamus turpis nulla, Kolkata
+                        </p>
+                        <div class="specs">
+                            <span>4 BHK</span>
+                            <span>836 sq ft</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                        <p class="description">
+                            Purus adipiscing amet urna platea. Ullamcorper mauris quis pretium in viverra netus nibh.
+                        </p>
+                    </div>
+                    <div class="property-price">
+                        <div class="price">
+                            <h3>₹ 81 Lacs</h3>
+                            <p>₹ 6,124 / sq ft</p>
+                        </div>
+                        <div class="property-buttons">
+                            <button class="view-details">View Details</button>
+                            <button class="contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="./images/propertyBuyingFilter(5).png" alt="Diamond Apartment">
+                </div>
+                <div class="property-details">
+                    <div class="property-info">
+                        <div class="property-actions">
+                            <button class="heart-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                            <button class="share-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16 6 12 2 8 6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2>Diamond Apartment</h2>
+                        <p class="location">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Vivamus turpis nulla, Kolkata
+                        </p>
+                        <div class="specs">
+                            <span>4 BHK</span>
+                            <span>836 sq ft</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                        <p class="description">
+                            Purus adipiscing amet urna platea. Ullamcorper mauris quis pretium in viverra netus nibh.
+                        </p>
+                    </div>
+                    <div class="property-price">
+                        <div class="price">
+                            <h3>₹ 81 Lacs</h3>
+                            <p>₹ 6,124 / sq ft</p>
+                        </div>
+                        <div class="property-buttons">
+                            <button class="view-details">View Details</button>
+                            <button class="contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+      <!-- Property Filter End -->
+
+      <!-- footer Start -->
+      <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <h2 class="footHead2">HappyHome</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur. Dolor cursus consectetur et arcu quis
+                    netus at. Tellus felis elementum eget turpis amet. Duis eget neque quisque eget ipsum enim.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Lorem ipsum, dolor sit amet, consectetur</p>
+                    <p><i class="fas fa-phone"></i> +91 0011001100</p>
+                    <p><i class="fas fa-envelope"></i> happyhome@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Services</h3>
+                <ul>
+                    <li><a href="#">House for Rent</a></li>
+                    <li><a href="#">House for Sale</a></li>
+                    <li><a href="#">Villas for Rent</a></li>
+                    <li><a href="#">Villas for Sale</a></li>
+                    <li><a href="#">Flats for Rent</a></li>
+                    <li><a href="#">Flats for Sale</a></li>
+                    <li><a href="#">Townhouse for Rent</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter Subscribe</h3>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HappyHome. All rights reserved.</p>
+        </div>
+    </footer>
+
+      
+       <!-- footer End -->
+
+      <!--  -->
+      <script src="./js/propertyByuing.js"></script>
+</body>
+</html>

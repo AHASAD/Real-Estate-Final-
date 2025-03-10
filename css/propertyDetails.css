@@ -1,0 +1,957 @@
+:root {
+    --primary: #ff9900;
+    --white: #ffffff;
+    --dark: #333333;
+  
+    --primary-color: #ff9800;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --border-color: #ddd;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --section-spacing: 2rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+  }
+  .container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* gap: 20px; */
+    /* padding: 20px; */
+    /* add */
+    /* background-color: aquamarine; */
+  }
+  
+  .section_padding {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem 2rem; */
+    /* background: var(--white); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .home-icon {
+    color: var(--primary);
+    margin-right: 0.5rem;
+    max-width: 47px;
+    max-height: 41px;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary);
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .btn-sell {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .btn-sell:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-search,
+  .btn-profile {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--dark);
+    padding: 0.5rem;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .mobile-menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--dark);
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* scroll Section start */
+  header.sticky {
+    padding: 5px 100px;
+     background: var(--dark);
+  }
+  /* scroll Section End */
+  
+  /* Hero Section */
+  .hero {
+    width: 1600px;
+    height: 400px;
+    max-width: 100%;
+    background-image: url("../images/agents_bg_img.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* margin-top: 70px; */
+  
+    /* new */
+  
+    padding-top: 4rem;
+    object-fit: cover;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    /* padding: 4rem 2rem; */
+  }
+  
+  .hero h2 {
+    font-size: 34px;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  #home_svg {
+    color: var(--primary);
+  }
+  
+  .home-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .separator {
+    color: var(--white);
+  }
+  
+  .current {
+    color: var(--primary);
+  }
+  
+  /* Diamond Apartment Start */
+  
+  #daApartment {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .diamondApartment_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .da1 {
+    position: relative;
+  }
+  
+  #daimg {
+    margin: 13px;
+    margin-bottom: 7px;
+  }
+  #daimg2 {
+    margin: 13px 0px;
+  }
+  
+  #daimg3 {
+    margin-left: 13px;
+  }
+  
+  .view-more {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Diamond Apartment end */
+  
+  /* Da Text Sec Start */
+  
+  #da_textMain {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .dATextcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Header Styles */
+  .property-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--section-spacing);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .property-title {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .property-location {
+    display: flex;
+    align-items: center;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .property-location .material-symbols-outlined {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .property-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .property-meta p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .property-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-favorite,
+  .btn-share {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+  }
+  
+  .btn-favorite:hover {
+    color: #ff4081;
+  }
+  
+  .btn-share:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Content Layout */
+  .property-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .property-main {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .property-sidebar {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  /* Property Details */
+  .property-details,
+  .property-description,
+  .amenities,
+  /* .property-location, */
+  .property-agent {
+    margin-bottom: var(--section-spacing);
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .detail-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .detail-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .detail-value {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  /* Amenities */
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+  
+  .amenity-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    background-color: var(--light-gray);
+  }
+  
+  .amenity-item .material-symbols-outlined {
+    color: var(--primary-color);
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+  }
+  
+  .amenity-item p {
+    margin-bottom: 0;
+  }
+  
+  /* Map */
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .location-map {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Agent */
+  .agent-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .agent-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid white;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .agent-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .agent-info h3 {
+    margin-bottom: 0.3rem;
+  }
+  
+  .agent-info p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e68a00;
+  }
+  
+  /*  */
+  
+  /* Footer Start */
+  .footer {
+      width: 100%;
+      max-width: 1600px;
+      min-height: 500px;
+      margin: 0 auto;
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                  url('../images/footer\ _bg.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 40px 20px;
+  }
+  
+  .footer-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+  }
+  
+  .footer-section {
+      padding: 20px;
+  }
+  
+  /* Logo Section */
+  .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .logo i {
+      color: #FFA500;
+      font-size: 24px;
+  }
+  
+  .description {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #ccc;
+  }
+  
+  .contact-info p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ccc;
+  }
+  
+  /* Links Sections */
+  .footHead3 {
+      margin-bottom: 20px;
+      font-size: 20px;
+  }
+  
+  .footer-section ul {
+      list-style: none;
+  }
+  
+  .footer-section ul li {
+      margin-bottom: 12px;
+  }
+  
+  .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+      color: #FFA500;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+  }
+  
+  .social-icons a {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+  }
+  
+  .social-icons a:hover {
+      background: #FFA500;
+  }
+  
+  /* Newsletter */
+  .newsletter form {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .newsletter input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+  }
+  
+  .newsletter button {
+      padding: 10px 20px;
+      background: #FFA500;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+  
+  .newsletter button:hover {
+      background: #ff8c00;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+  }
+  
+  /* Footer End */
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .property-header {
+      flex-direction: column;
+    }
+  
+    .property-meta {
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+  
+    .details-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .amenities-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dATextcontainer {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .details-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  
+    .amenities-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .property-details,
+    .property-description,
+    .amenities,
+    .property-location,
+    .property-agent {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .details-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .amenity-item {
+      padding: 0.5rem;
+    }
+  
+    .amenity-item .material-symbols-outlined {
+      font-size: 1.2rem;
+    }
+  }
+  /* Da Text Sec End */
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 1024px) {
+    .hero {
+      height: 350px;
+    }
+  
+    /* Footer */
+  
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* DA images start*/
+    .diamondApartment_container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .da1,
+    .da2,
+    .da3 {
+      flex: 0 0 auto;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* DA images End */
+    
+    /* Footer start */
+  
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  
+  /* Maintain original structure at 1024px and above */
+  @media (min-width: 1024px) {
+    .diamondApartment_container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .da1,
+    .da2,
+    .da3 {
+      flex: 0 0 auto;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Tablet view (1023px to 768px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .diamondApartment_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    /* First row: da1 and da2 side by side */
+    .da1,
+    .da2 {
+      flex: 0 0 calc(50% - 15px);
+      margin: 0;
+    }
+  
+    /* Second row: da3 full width */
+    .da3 {
+      flex: 0 0 100%;
+      display: flex;
+      gap: 15px;
+    }
+  
+    /* Make upperimg and lowerimg side by side */
+    .da3 .upperimg,
+    .da3 .lowerimg {
+      flex: 0 0 calc(50% - 7.5px);
+      margin: 0;
+    }
+  
+    /* Reset all margins from original layout */
+    #daimg,
+    #daimg2,
+    #daimg3 {
+      margin: 0;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+  
+    .nav.active {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .hero {
+      height: 300px;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    /* DA img Start */
+    .diamondApartment_container {
+      padding: 10px;
+    }
+  
+    .da1,
+    .da2,
+    .da3 {
+      flex: 1 1 100%;
+      margin: 0 0 10px 0;
+    }
+  
+    #daimg,
+    #daimg2,
+    #daimg3 {
+      margin: 0 0 10px 0;
+    }
+    /* DA img Start */
+  
+    /* Footer Start */
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  
+    .contact-info p {
+      justify-content: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .newsletter form {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 1rem;
+    }
+  
+    .logo span {
+      display: none;
+    }
+  
+    .header-actions {
+      gap: 0.5rem;
+    }
+  
+    .btn-sell {
+      display: none;
+    }
+  
+    .hero {
+      height: 250px;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 326px) {
+    .header {
+      padding: 0.5rem;
+    }
+  
+    .hero {
+      height: 200px;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .breadcrumb {
+      font-size: 0.875rem;
+    }
+  
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .logo {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .newsletter input,
+    .newsletter button {
+      width: 100%;
+    }
+  
+    .footer-section {
+      padding: 10px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    .footHead3 {
+      font-size: 18px;
+    }
+  
+    /* DA img start */
+    .diamondApartment_container {
+      padding: 5px;
+    }
+  
+    .view-more {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    #daimg,
+    #daimg2,
+    #daimg3 {
+      margin-bottom: 5px;
+    }
+    /* DA img End */
+  }
+  

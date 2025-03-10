@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/propertyDetails.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Gfont -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+    <header class="header section_padding">
+        <div class="logo">
+            <a href="/">
+                <svg class="home-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
+                </svg>
+                <span>HappyHome</span>
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link active">Home</a></li>
+                <li><a href="./aboutUs.html" class="nav-link">About</a></li>
+                <li><a href="./agents.html" class="nav-link">Agents</a></li>
+                <li><a href="index.html#testimonial" class="nav-link">Testimonial</a></li>
+                <li><a href="./contactUs.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-sell">Sell Property</button>
+            <button class="btn-search" aria-label="Search">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <button class="btn-profile" aria-label="Profile">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor"
+                        d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2a10 10 0 00-10 10h20a10 10 0 00-10-10z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section_padding">
+            <div class="hero-content">
+                <h2>Get Details of Your Property</h2>
+                <div class="breadcrumb">
+                    <a href="/" class="home-link">
+                        <svg viewBox="0 0 24 24" width="16" height="16" id="home_svg">
+                            <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
+                        </svg>
+                        Home
+                    </a>
+                    <span class="separator">></span>
+                    <span class="current">Buy Property</span>
+                    <span class="separator">></span>
+                    <span class="current">Property Details</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- images section start -->
+    <section id="diamondApartment_img">
+        <div class="diamondApartment_container" id="daApartment">
+            <div class="da1" id="daimg">
+                <img src="./images/diamondApartment(1).png" alt="">
+                <button class="view-more" onclick="viewMore()">View More</button>
+            </div>
+            <div class="da2" id="daimg2">
+                <img src="./images/diamondApartment(2).png" alt="">
+            </div>
+            <div class="da3">
+                <div class="upperimg" id="daimg">
+                    <img src="./images/diamondApartment(3).png" alt="">
+                </div>
+                <div class="lowerimg" id="daimg3">
+                    <img src="./images/diamondApartment(4).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- images section end -->
+
+    <!-- Diamond Apartment text Start -->
+    <div class="dATextcontainer" id="da_textMain">
+        <header class="property-header">
+            <div class="property-title">
+                <h1>Diamond Apartment</h1>
+                <div class="property-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Vivamus turpis nulla, Kolkata</p>
+                </div>
+            </div>
+            <div class="property-meta">
+                <p>Posted on: <span>20<sup>th</sup> October 2024</span></p>
+                <div class="property-actions">
+                    <button class="btn-favorite" aria-label="Add to favorites">
+                        <span class="material-symbols-outlined">favorite_border</span>
+                    </button>
+                    <button class="btn-share" aria-label="Share property">
+                        <span class="material-symbols-outlined">share</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="property-content">
+            <div class="property-main">
+                <section class="property-details">
+                    <h2>Property Details</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <p class="detail-label">Status</p>
+                            <p class="detail-value">For Sale</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">BHK</p>
+                            <p class="detail-value">4</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Property Type</p>
+                            <p class="detail-value">Flat</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Bathroom</p>
+                            <p class="detail-value">2</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Build Year</p>
+                            <p class="detail-value">2002</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Area</p>
+                            <p class="detail-value">836 sq ft</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="property-description">
+                    <h2>Property Description</h2>
+                    <p>Penatibus massa placerat et lectus non tincidunt dolor senectus. Magna pharetra turpis laoreet
+                        morbi congue. Neque elit non enim dapibus. Amet eget in viverra pulvinar tristique pellentesque
+                        lacus nis at. At ornare praesent integer dictum turpis maecenas in sed. Nunc viverra cursus
+                        mattis at dignissim. Varius nunc augue neque molestie. In mauris ut auctor vel tellus sed hac in
+                        in. Posuere posuere velit phaselius semper est arcu orci. Et odio malesuada volutpat nec.
+                        Facilisis dolor eliquet morbi proin.</p>
+                    <p>Nulla maecenas sed et sed suscipit. Morbi nisi sem vitae convallis. Condimentum iaculis
+                        adipiscing gravida consectetur orci. Dui nunc porta tempor ut tempor lobortis in. Posuere netus
+                        sit etiam tincidunt iaculis faucibus viverra morbi odio. Massa justo mi quam lorem nunc lacus
+                        ipsum.</p>
+                </section>
+
+                <section class="amenities">
+                    <h2>Amenities</h2>
+                    <div class="amenities-grid">
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">directions_car</span>
+                            <p>Parking</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">delete</span>
+                            <p>Disposables</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">ac_unit</span>
+                            <p>Air Conditioning</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">restaurant</span>
+                            <p>Cafeteria</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">pool</span>
+                            <p>Swimming Pool</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">park</span>
+                            <p>Park</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">fitness_center</span>
+                            <p>Gym</p>
+                        </div>
+                        <div class="amenity-item">
+                            <span class="material-symbols-outlined">dishwasher_gen</span>
+                            <p>Dishwasher</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="property-sidebar">
+                <section class="property-location">
+                    <h2>Property Location</h2>
+                    <div class="map-container">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=microsoft bangalore&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                        <!-- <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Real%20Estate%20%28Final%20Project%29%20%28Copy%29%20%28Copy%29%20%E2%80%93%20Figma%20-%20Google%20Chrome%2026-02-2025%2003_14_22-HYG9A7GjkqXRdRL0eYQrLmwuNMMD8b.png" alt="Map showing property location" class="location-map"> -->
+                        <a href="#" class="btn-primary">View on Map</a>
+                    </div>
+                </section>
+
+                <section class="property-agent">
+                    <h2>Property Agent</h2>
+                    <div class="agent-card">
+                        <img src="./images/ourTopAgents3.png" alt="David Mathew"
+                            class="agent-photo">
+                        <div class="agent-info">
+                            <h3>David Mathew</h3>
+                            <p>Buyer's Agent</p>
+                            <a href="#" class="btn-primary">View Agent</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Diamond Apartment text End -->
+
+     <!-- footer Start -->
+     <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <h2 class="footHead2">HappyHome</h2>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur. Dolor cursus consectetur et arcu quis
+                    netus at. Tellus felis elementum eget turpis amet. Duis eget neque quisque eget ipsum enim.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Lorem ipsum, dolor sit amet, consectetur</p>
+                    <p><i class="fas fa-phone"></i> +91 0011001100</p>
+                    <p><i class="fas fa-envelope"></i> happyhome@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div class="footer-section">
+                <h3 class="footHead3">Services</h3>
+                <ul>
+                    <li><a href="#">House for Rent</a></li>
+                    <li><a href="#">House for Sale</a></li>
+                    <li><a href="#">Villas for Rent</a></li>
+                    <li><a href="#">Villas for Sale</a></li>
+                    <li><a href="#">Flats for Rent</a></li>
+                    <li><a href="#">Flats for Sale</a></li>
+                    <li><a href="#">Townhouse for Rent</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter Subscribe</h3>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HappyHome. All rights reserved.</p>
+        </div>
+    </footer>
+
+      
+       <!-- footer End -->
+
+
+    <script src="./js/propertyDetails.js"></script>
+</body>
+
+</html>
